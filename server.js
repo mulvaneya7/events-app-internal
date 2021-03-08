@@ -52,7 +52,8 @@ app.post('/event', (req, res) => {
         title: req.body.title, 
         description: req.body.description,
         id : mockEvents.events.length + 1,
-        date: req.body.date
+        date: req.body.date,
+        location: req.body.location
      }
     // add to the mock array
     mockEvents.events.push(ev);
