@@ -51,7 +51,8 @@ app.post('/event', (req, res) => {
     const ev = { 
         title: req.body.title, 
         description: req.body.description,
-        id : mockEvents.events.length + 1
+        id : mockEvents.events.length + 1,
+        date: req.body.date
      }
     // add to the mock array
     mockEvents.events.push(ev);
